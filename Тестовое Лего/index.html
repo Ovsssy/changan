@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class="navigation">
                 <img class="navigation__img" src="img/logo-mobile.svg" alt="">
                 <ul class="navigation__list">
@@ -31,25 +31,32 @@
                         <a href="#">Контакты</a>
                     </li>
                 </ul>
-                <button class="navigation__button">Заказать звонок</button>
             </nav>
-            <section class="contact-info">
+            <div class="header__button-block">
+                <button class="navigation__button">Заказать звонок</button>
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <section class="contact-info">
+            <div class="contact__container">
                 <ul class="contact-info__list">
                     <li class="contact-info__item">
-                        <img src="#" alt="">
-                        <address>Олимпийский просп., 5, стр. 1, Москва</address>
+                        <img src="img/map-pin.svg" alt="">
+                        <address class="contact-info__address">Олимпийский просп., 5, стр. 1, Москва</address>
                     </li>
                     <li class="contact-info__item">
-                        <img src="#" alt="">
+                        <img src="img/strel.svg" alt="">
                         <p>Проложить маршрут</p>
                     </li>
-                    <li class="contact-info__item">
-                        <img src="#" alt="">
+                    <li class="schedule contact-info__item">
+                        <img src="img/shed.svg" alt="">
                         <p>9:00 - 21:00 (ежедневно)</p>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </header>
     <main class="page-main">
         <div class="container">
